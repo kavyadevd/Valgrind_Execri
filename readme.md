@@ -1,4 +1,4 @@
-# C++ Boilerplate
+# Valgrind Testing
 [![Build Status](https://travis-ci.org/https://github.com/kavyadevd/Valgrind_Exercise.svg?branch=master)](https://travis-ci.org/https://github.com/kavyadevd/Valgrind_Exercise)
 [![Coverage Status](https://coveralls.io/repos/github/https://github.com/kavyadevd/Valgrind_Exercise/badge.svg?branch=master)](https://coveralls.io/github/https://github.com/kavyadevd/Valgrind_Exercise?branch=master)
 ---
@@ -53,6 +53,12 @@ cd boilerplate-eclipse
 cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../cpp-boilerplate/
 ```
 
+Valgrind installation
+```bash
+sudo apt install valgrind
+sudo apt-get install -y kcachegrind
+```
+
 ## Import
 
 Open Eclipse, go to File -> Import -> General -> Existing Projects into Workspace -> 
@@ -75,6 +81,15 @@ select Run As -> Local C/C++ Application
 
 2. Choose the binaries to run (e.g. shell-app, cpp-test for unit testing)
 
+3. Run Valgrind 
+
+```bash
+valgrind ./app/shell-app
+valgrind --tool=helgrind ./app/shell-app
+valgrind --leak-check=full --show-leak-kinds=all ./app/shell-app
+valgrind --tool=callgrind ./app/shell-app
+valgrind --log-file="valgrind-output" ./app/shell-app
+```
 
 ## Debug
 
