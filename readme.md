@@ -1,18 +1,20 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.org/https://github.com/kavyadevd/Valgrind_Exercise.svg?branch=master)](https://travis-ci.org/https://github.com/kavyadevd/Valgrind_Exercise)
+[![Coverage Status](https://coveralls.io/repos/github/https://github.com/kavyadevd/Valgrind_Exercise/badge.svg?branch=master)](https://coveralls.io/github/https://github.com/kavyadevd/Valgrind_Exercise?branch=master)
 ---
 
 ## Overview
 
-Simple starter C++ project with:
+Repository to explore the valgrind tool to improve code quality during development and testing. Valgrind helps detect several types of code issues:
 
-- cmake
-- googletest
+Undefined behavior
+Function and memory profiling
+Data-race detection
+Memory leak detection
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/https://github.com/kavyadevd/Valgrind_Exercise
 cd <path to repository>
 mkdir build
 cd build
@@ -39,7 +41,7 @@ In your Eclipse workspace directory (or create a new one), checkout the repo (an
 ```
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/https://github.com/kavyadevd/Valgrind_Exercise
 ```
 
 In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
