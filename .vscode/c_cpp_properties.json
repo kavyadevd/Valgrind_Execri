@@ -10,7 +10,13 @@
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
+                "path": [
+                    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1",
+                    "${workspaceRoot}/vendor/gtest/include",
+                    "${workspaceRoot}/vendor/boost",
+                    "/usr/include",
+                    "${workspaceFolder}"
+                ]
             },
             "macFrameworkPath": [
                 "/System/Library/Frameworks",
@@ -19,35 +25,47 @@
             "intelliSenseMode": "macos-clang-x64",
             "compilerPath": "/usr/bin/clang-9",
             "cStandard": "c11",
-            "cppStandard": "c++14"
+            "cppStandard": "c++14",
+            "compilerArgs": []
         },
         {
             "name": "Linux",
             "includePath": [
-                "/usr/include"
+                "/usr/include",
+                "${workspaceFolder}/include"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
+                "path": [
+                    "/usr/include",
+                    "${workspaceFolder}"
+                ]
             },
             "intelliSenseMode": "linux-gcc-x64",
             "compilerPath": "/usr/bin/clang-9",
             "cStandard": "c11",
-            "cppStandard": "c++14"
+            "cppStandard": "c++14",
+            "compilerArgs": []
         },
         {
             "name": "Win32",
             "includePath": [
-                "c:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include"
+                "c",
+                "/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
+                "path": [
+                    "c",
+                    "/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
+                    "${workspaceFolder}"
+                ]
             },
             "intelliSenseMode": "windows-msvc-x64",
             "compilerPath": "/usr/bin/clang-9",
             "cStandard": "c11",
-            "cppStandard": "c++14"
+            "cppStandard": "c++14",
+            "compilerArgs": []
         }
     ],
     "version": 4

@@ -1,18 +1,20 @@
-# Valgrind Exercise
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+# Valgrind Testing
+[![Build Status](https://travis-ci.org/https://github.com/kavyadevd/Valgrind_Exercise.svg?branch=master)](https://travis-ci.org/https://github.com/kavyadevd/Valgrind_Exercise)
+[![Coverage Status](https://coveralls.io/repos/github/https://github.com/kavyadevd/Valgrind_Exercise/badge.svg?branch=master)](https://coveralls.io/github/https://github.com/kavyadevd/Valgrind_Exercise?branch=master)
 ---
 
 ## Overview
 
-Simple starter C++ project with:
+Repository to explore the valgrind tool to improve code quality during development and testing. Valgrind helps detect several types of code issues:
 
-- cmake
-- googletest
+Undefined behavior
+Function and memory profiling
+Data-race detection
+Memory leak detection
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/https://github.com/kavyadevd/Valgrind_Exercise
 cd <path to repository>
 mkdir build
 cd build
@@ -46,7 +48,7 @@ In your Eclipse workspace directory (or create a new one), checkout the repo (an
 ```
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/https://github.com/kavyadevd/Valgrind_Exercise
 ```
 
 In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
@@ -58,6 +60,7 @@ cd boilerplate-eclipse
 cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../cpp-boilerplate/
 ```
 
+<<<<<<< HEAD
 Running Valgrind
 ```bash
   valgrind --tool=helgrind ./app/shell-app
@@ -67,6 +70,12 @@ Running Valgrind
   valgrind --log-file="valgrind-output"
   valgrind --help
   valgrind ./app/shell-app --log-file="valgrind-output"
+=======
+Valgrind installation
+```bash
+sudo apt install valgrind
+sudo apt-get install -y kcachegrind
+>>>>>>> valgrind_exercise
 ```
 
 ## Import
@@ -91,6 +100,15 @@ select Run As -> Local C/C++ Application
 
 2. Choose the binaries to run (e.g. shell-app, cpp-test for unit testing)
 
+3. Run Valgrind 
+
+```bash
+valgrind ./app/shell-app
+valgrind --tool=helgrind ./app/shell-app
+valgrind --leak-check=full --show-leak-kinds=all ./app/shell-app
+valgrind --tool=callgrind ./app/shell-app
+valgrind --log-file="valgrind-output" ./app/shell-app
+```
 
 ## Debug
 
