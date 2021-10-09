@@ -1,6 +1,6 @@
 # Valgrind Testing
-[![Build Status](https://app.travis-ci.com/github/kavyadevd/cpp-boilerplate.svg?branch=master)](https://app.travis-ci.com/github/kavyadevd/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/https://github.com/kavyadevd/Valgrind_Exercise/badge.svg?branch=master)](https://coveralls.io/github/https://github.com/kavyadevd/Valgrind_Exercise?branch=master)
+[![Build Status](https://app.travis-ci.com/github/kavyadevd/cpp-boilerplate/badge.svg?branch=master)](https://app.travis-ci.com/github/kavyadevd/cpp-boilerplate)
+[![Coverage Status](https://coveralls.io/github/kavyadevd/Valgrind_Exercise/badge.svg?branch=master)](https://coveralls.io/github/kavyadevd/Valgrind_Exercise?branch=master)
 ---
 
 ## Overview
