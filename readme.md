@@ -1,4 +1,4 @@
-# C++ Boilerplate
+# Valgrind Exercise
 [![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
 ---
@@ -35,6 +35,13 @@ This generates a index.html page in the build/coverage sub-directory that can be
 
 ## Installation
 
+Install Valgrind
+```bash
+sudo apt install valgrind
+sudo apt-get install -y kcachegrind
+
+```
+
 In your Eclipse workspace directory (or create a new one), checkout the repo (and submodules)
 ```
 mkdir -p ~/workspace
@@ -49,6 +56,17 @@ cd ~/workspace
 mkdir -p boilerplate-eclipse
 cd boilerplate-eclipse
 cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../cpp-boilerplate/
+```
+
+Running Valgrind
+```bash
+  valgrind --tool=helgrind ./app/shell-app
+  valgrind --leak-check=full --show-leak-kinds=all ./app/shell-app
+  valgrind --tool=callgrind ./app/shell-app
+  valgrind ./app/shell-app
+  valgrind --log-file="valgrind-output"
+  valgrind --help
+  valgrind ./app/shell-app --log-file="valgrind-output"
 ```
 
 ## Import
